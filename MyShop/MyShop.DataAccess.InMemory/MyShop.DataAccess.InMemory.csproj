@@ -50,6 +50,14 @@
       <Project>{892e0d00-4852-421a-9e82-4a54a6e2a020}</Project>
       <Name>MyShop.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MyShop.DataAccess.SQL\MyShop.DataAccess.SQL.csproj">
+      <Project>{e5a4626e-000f-4021-ad30-f48411ad2b38}</Project>
+      <Name>MyShop.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyShop.Services\MyShop.Services.csproj">
+      <Project>{c05311db-2d23-4e1f-a5c9-2f7edd6c5c2e}</Project>
+      <Name>MyShop.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
