@@ -91,7 +91,7 @@ namespace MyShop.Services
             Basket basket = GetBasket(httpContext, true);
             BasketItem item = basket.BasketItems.FirstOrDefault(i => i.Id == itemId);
 
-            if (item == null)
+            if (item != null)
             {
                 
                 basket.BasketItems.Remove(item);
@@ -144,24 +144,10 @@ namespace MyShop.Services
             }
         }
 
-        public void AddToBasket(Core.Contracts.HttpContextBase httpContext, string productId)
-        {
-            throw new NotImplementedException();
-        }
+        
 
-        public void RemoveFromBasket(Core.Contracts.HttpContextBase httpContext, string itemId)
-        {
-            throw new NotImplementedException();
-        }
 
-        public List<BasketItemViewModel> GetBasketItems(Core.Contracts.HttpContextBase httpContext)
-        {
-            throw new NotImplementedException();
-        }
 
-        public BasketSummaryViewModel GetBasketSummary(Core.Contracts.HttpContextBase httpContext)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
