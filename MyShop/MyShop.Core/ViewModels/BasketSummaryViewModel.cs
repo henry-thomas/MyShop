@@ -11,7 +11,7 @@ namespace MyShop.Core.ViewModels
         public int BasketCount { get; set; }
         public decimal BasketTotal { get; set; }
 
-        public BasketSummaryViewModel() { 
+       public BasketSummaryViewModel() { 
             
         }
 
